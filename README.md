@@ -1,47 +1,31 @@
-# 🍔 Blululu Rift - Ultimate V3
+# Blululu OTBot 🤖
 
-**Blululu Rift** é um bot modular de alta performance desenvolvido em Python para automação de tarefas em jogos (MMORPGs). O projeto utiliza leitura de memória em tempo real para monitorizar atributos do personagem e reagir instantaneamente.
+O **Blululu OTBot** é uma ferramenta de automação e suporte desenvolvida para o **OTClient v8**. O projeto foca no estudo de manipulação de memória e interação com processos em tempo real, oferecendo uma interface intuitiva para otimização de gameplay.
 
----
+## 🚀 Funcionalidades
 
-## Funcionalidades
+* **Memory Reading Engine:** Leitura de endereços de memória (offsets/pointers) para monitoramento de HP, Mana e Status.
+* **Suporte Multi-Arquitetura:** Desenvolvido com lógica adaptável para clientes **x32** e **x64**.
+* **Auto-Healing:** Sistema inteligente de cura baseado em prioridades e intervalos configuráveis.
+* **Interface Customizada:** GUI integrada para fácil configuração das funções de suporte.
+* **Integração com Pymem:** Utilização de bibliotecas Python de alto desempenho para manipulação de memória.
 
-- 🛡️ **Auto-Heal & Auto-Potion:** Cura automática baseada em valores reais de HP e Mana.
-- ✨ **Mana Train:** Treino de skills automatizado quando a mana atinge o limite.
-- 🍕 **Auto-Food:** Sistema de alimentação cíclico (loop de 5 min).
-- 🔄 **Anti-AFK:** Sistema de rotação para evitar desconexão por inatividade.
-- 💡 **Light Hack:** Modificação de memória para iluminação total do mapa.
-- 🔒 **Security Lock:** Só envia comandos de teclado se a janela do jogo estiver em foco.
-- ⚙️ **Sistema Modular:** Configurações técnicas via `config.ini` e perfis de usuário via JSON.
+## 🛠️ Tecnologias Utilizadas
 
----
+* **Python:** Linguagem principal do projeto.
+* **Pymem:** Para leitura e escrita na memória do processo.
+* **PyQt / Tkinter:** Para o desenvolvimento da interface gráfica (GUI).
+* **Cheat Engine:** Utilizado na fase de mapeamento de ponteiros dinâmicos.
 
-## Como Utilizar
+## 📂 Estrutura do Projeto
 
-1. **Configuração Técnica:** - Edite o ficheiro `config.ini` com os endereços de memória (offsets) atualizados do seu jogo.
-2. **Execução:** - Execute o `main.exe` (ou `python main.py`) como **Administrador**.
-3. **Perfis:** - Digite o nome do seu personagem na interface, ajuste os valores e clique em **Salvar**.
+* `/src`: Código-fonte principal do bot.
+* `/offsets`: Arquivos de configuração com os endereços de memória para diferentes versões do OTClient.
+* `/modules`: Lógicas específicas de cura, utilitários e automação.
 
----
+## ⚠️ Aviso Legal (Disclaimer)
 
-## Tecnologias Utilizadas
-
-- **Python 3.11+**
-- **PyQt5:** Interface Gráfica (GUI).
-- **Pymem:** Manipulação e leitura de memória RAM.
-- **PyDirectInput:** Simulação de teclas em baixo nível (DirectX compatível).
-- **PyGetWindow:** Gestão e verificação de janelas ativas.
+Este projeto foi desenvolvido estritamente para **fins educacionais** e de estudo sobre Engenharia de Software, especificamente focado em manipulação de processos e memória. O uso de ferramentas de automação pode violar os termos de serviço de determinados servidores. O desenvolvedor não se responsabiliza pelo uso indevido desta ferramenta.
 
 ---
-
-## Créditos e Autoria
-
-Este projeto foi desenvolvido e idealizado por:
-
-* **Bruno Ribeiro** **Brubeiro** - *Desenvolvimento Principal e Arquitetura* - [https://github.com/brubeiro]
-
----
-
-## Aviso Legal
-
-Este software foi criado para fins de estudo e automação pessoal. O uso de bots pode violar os Termos de Serviço de alguns jogos. Use com responsabilidade. O autor não se responsabiliza por eventuais suspensões ou banimentos.
+Desenvolvido por [Bruno Ribeiro](https://github.com/brubeiro)
