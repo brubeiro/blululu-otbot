@@ -1,31 +1,40 @@
 # Blululu OTBot 🤖
 
-O **Blululu OTBot** é uma ferramenta de automação e suporte desenvolvida para o **OTClient v8**. O projeto foca no estudo de manipulação de memória e interação com processos em tempo real, oferecendo uma interface intuitiva para otimização de gameplay.
+![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
-## 🚀 Funcionalidades
+**Blululu OTBot** is an automation and support tool developed for the **OTClient v8**. This project focuses on the study of memory manipulation and real-time process interaction, offering an intuitive interface for gameplay optimization.
 
-* **Memory Reading Engine:** Leitura de endereços de memória (offsets/pointers) para monitoramento de HP, Mana e Status.
-* **Suporte Multi-Arquitetura:** Desenvolvido com lógica adaptável para clientes **x32** e **x64**.
-* **Auto-Healing:** Sistema inteligente de cura baseado em prioridades e intervalos configuráveis.
-* **Interface Customizada:** GUI integrada para fácil configuração das funções de suporte.
-* **Integração com Pymem:** Utilização de bibliotecas Python de alto desempenho para manipulação de memória.
+## 🚀 Key Features
 
-## 🛠️ Tecnologias Utilizadas
+* **Memory Reading Engine:** Advanced reading of memory addresses (offsets/pointers) for monitoring HP, Mana, and Status.
+* **Multi-Architecture Support:** Developed with adaptable logic for both **x32** and **x64** clients.
+* **Auto-Healing:** Intelligent healing system based on priorities and configurable intervals.
+* **Custom GUI:** Integrated interface for easy configuration of support functions.
+* **Pymem Integration:** Utilizing high-performance Python libraries for low-level memory manipulation.
 
-* **Python:** Linguagem principal do projeto.
-* **Pymem:** Para leitura e escrita na memória do processo.
-* **PyQt / Tkinter:** Para o desenvolvimento da interface gráfica (GUI).
-* **Cheat Engine:** Utilizado na fase de mapeamento de ponteiros dinâmicos.
+## 🛠️ Tech Stack
 
-## 📂 Estrutura do Projeto
+* **Python:** Core programming language.
+* **Pymem:** For process memory reading and writing.
+* **PyQt / Tkinter:** For GUI development.
+* **Cheat Engine:** Used during the dynamic pointer mapping phase.
 
-* `/src`: Código-fonte principal do bot.
-* `/offsets`: Arquivos de configuração com os endereços de memória para diferentes versões do OTClient.
-* `/modules`: Lógicas específicas de cura, utilitários e automação.
+## 📂 Project Structure
 
-## ⚠️ Aviso Legal (Disclaimer)
+* `/src`: Main bot source code.
+* `/offsets`: Configuration files containing memory addresses for different OTClient versions.
+* `/modules`: Logic for specific healing, utilities, and automation tasks.
 
-Este projeto foi desenvolvido estritamente para **fins educacionais** e de estudo sobre Engenharia de Software, especificamente focado em manipulação de processos e memória. O uso de ferramentas de automação pode violar os termos de serviço de determinados servidores. O desenvolvedor não se responsabiliza pelo uso indevido desta ferramenta.
+## 🗺️ Roadmap & Future Improvements
 
----
-Desenvolvido por [Bruno Ribeiro](https://github.com/brubeiro)
+* **Computer Vision Integration:** Implementing image recognition for on-screen object detection (supplementing memory reading).
+* **Machine Learning Support:** Leveraging predictive models to optimize response times in combat scenarios.
+* **Advanced Logging System:** Real-time monitoring of XP efficiency and resource consumption.
+
+## ⚙️ How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/brubeiro/blululu-otbot.git](https://github.com/brubeiro/blululu-otbot.git)
